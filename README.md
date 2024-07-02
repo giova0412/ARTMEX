@@ -9,7 +9,7 @@ La venta de artesanías en México enfrenta varios desafíos, como la falta de v
 **Propuesta de Solución:**
 Desarrollar una aplicación móvil que funcione como un mapa interactivo de México, permitiendo a los usuarios buscar y localizar talleres de artesanos cercanos. La app redirigirá a sitios oficiales de los artesanos para realizar compras seguras y confiables.
 
-**Objetivo General:**
+##**Objetivo General:**
 Crear una plataforma que facilite la venta de artesanías mexicanas, apoyando a los artesanos locales al incrementar su visibilidad y accesibilidad.
 
 ## Objetivos Específicos
