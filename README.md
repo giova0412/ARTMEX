@@ -43,5 +43,5 @@ Crear una plataforma que facilite la venta de artesanías mexicanas, apoyando a 
 5. REST API para la integración con sitios oficiales de los artesanos.
 
 ## Autores
-- Giovany Raúl Pazos Cruz 
-- Edwin Hernández Campos
+- Giovany Raúl Pazos Cruz @giova0412
+- Edwin Hernández Campos. @Edwincamp
