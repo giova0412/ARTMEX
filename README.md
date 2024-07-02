@@ -23,9 +23,11 @@ Crear una plataforma que facilite la venta de artesanías mexicanas, apoyando a 
 
 ## Identidad Gráfica
 - **Logotipo de la Empresa:**
-- .
+- ![Snrlax](https://github.com/giova0412/proyecto-final-integradora-/blob/main/1e2aead0-77b4-4ad6-8285-d8444debbfeb.jpeg)
   
 - **Logotipo del Producto:**
+- ![Snrlax](https://github.com/giova0412/proyecto-final-integradora-/blob/main/IMG_3982.png)
+- 
 ## Lista de Tecnologías
 1. Flutter/Dart para el desarrollo de la app móvil.
 2. Google Maps API para la implementación del mapa interactivo.
