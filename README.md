@@ -23,6 +23,7 @@ Crear una plataforma que facilite la venta de artesanías mexicanas, apoyando a 
 
 ## Identidad Gráfica
 - **Logotipo de la Empresa:**
+- .
   [
 - **Logotipo del Producto:**
 ## Lista de Tecnologías
