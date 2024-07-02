@@ -28,6 +28,13 @@ Crear una plataforma que facilite la venta de artesanías mexicanas, apoyando a 
 - **Logotipo del Producto:**
 - ![Snrlax](https://github.com/giova0412/proyecto-final-integradora-/blob/main/IMG_3982.png)
 - 
+- ### Paleta de Colores
+- **Negro (#000000):** Utilizado en el fondo del logotipo de la empresa.
+- **Blanco (#FFFFFF):** Utilizado en el texto y contornos de ambos logotipos.
+- **Verde oscuro (#004225):** Utilizado en el texto del logotipo de la empresa.
+- **Rojo (#FF0000):** Utilizado en el texto "ARTESMEX" y en el marcador del mapa.
+- **Verde (#008000):** Utilizado en el círculo exterior del logotipo del producto.
+- **Verde claro (#00FF00):** Utilizado en el círculo más delgado del logotipo del producto.p
 ## Lista de Tecnologías
 1. Flutter/Dart para el desarrollo de la app móvil.
 2. Google Maps API para la implementación del mapa interactivo.
