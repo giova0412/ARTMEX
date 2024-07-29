@@ -1,4 +1,4 @@
-# proyecto-final-integradora-
+# ARTMEX-
 # App de Venta de Artesanías de México
 
 ## Descripción
