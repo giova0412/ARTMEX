@@ -1,7 +1,7 @@
 # requisitos funcionales
 
 
- En esta seccion se veran los requisitos funcionales
+ En esta seccion se veran los requisitos funcionales de artmex
 ## Estructura de Archivos
 
 >ARTMEX<br>
