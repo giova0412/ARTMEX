@@ -3,49 +3,56 @@
 
  En esta seccion se trabajara con el mapa de sitio 
  ### Mapa de sitio de aplicacion
- graph TD;
-    Inicio-->Breve_descripción_de_la_app;
-    Inicio-->Acceso_directo_a_la_geolocalización;
+ 
+### **Mapa de Sitio de ARTMEX**
 
-    Mapa_Interactivo-->Mapa_de_México_con_marcadores;
-    Mapa_Interactivo-->Búsqueda_por_ubicación_y_tipo_de_artesanía;
-    Mapa_Interactivo-->Filtros_(categoría,_distancia,_popularidad);
+1. **Inicio**
+   - Breve descripción de la app
+   - Acceso directo a la geolocalización
 
-    Talleres_de_Artesanos-->Lista_de_Talleres;
-    Talleres_de_Artesanos-->Detalle_del_Taller;
+2. **Mapa Interactivo**
+   - Mapa de México con marcadores de talleres de artesanos
+   - Función de búsqueda por ubicación y tipo de artesanía
+   - Filtros (categoría, distancia, popularidad)
 
-    Lista_de_Talleres-->Vista_de_lista_o_mapa;
-    Lista_de_Talleres-->Opciones_de_búsqueda_y_filtrado;
+3. **Talleres de Artesanos**
+   - **Lista de Talleres**
+     - Vista de lista o mapa
+     - Opciones de búsqueda y filtrado
+   - **Detalle del Taller**
+     - Información sobre el artesano (nombre, historia, especialidad)
+     - Galería de productos
+     - Opiniones y valoraciones de usuarios
+     - Enlaces a sitios oficiales o e-commerce
+     - Botón de contacto
 
-    Detalle_del_Taller-->Información_sobre_el_artesano;
-    Detalle_del_Taller-->Galería_de_productos;
-    Detalle_del_Taller-->Opiniones_y_valoraciones;
-    Detalle_del_Taller-->Enlaces_a_sitios_oficiales_o_e-commerce;
-    Detalle_del_Taller-->Botón_de_contacto;
+4. **Compras**
+   - Redirección a sitios oficiales de los artesanos
+   - Seguridad en las transacciones (Stripe/PayPal)
+   - Historial de compras (opcional)
 
-    Compras-->Redirección_a_sitios_oficiales_de_artesanos;
-    Compras-->Seguridad_en_las_transacciones;
-    Compras-->Historial_de_compras_(opcional);
+5. **Perfil de Usuario**
+   - Información personal
+   - Historial de visitas y compras
+   - Favoritos (talleres y productos guardados)
+   - Configuración de preferencias (idioma, notificaciones)
 
-    Perfil_de_Usuario-->Información_personal;
-    Perfil_de_Usuario-->Historial_de_visitas_y_compras;
-    Perfil_de_Usuario-->Favoritos_(talleres_y_productos_guardados);
-    Perfil_de_Usuario-->Configuración_de_preferencias;
+6. **Soporte y Ayuda**
+   - Preguntas Frecuentes (FAQ)
+   - Tutorial sobre cómo usar la app
+   - Soporte por chat o correo electrónico
 
-    Soporte_y_Ayuda-->Preguntas_Frecuentes_(FAQ);
-    Soporte_y_Ayuda-->Tutorial_sobre_cómo_usar_la_app;
-    Soporte_y_Ayuda-->Soporte_por_chat_o_correo_electrónico;
+7. **Sobre Nosotros**
+   - Información de la misión y visión de ARTMEX
+   - Detalles sobre los autores del proyecto
+   - Enlaces a redes sociales
 
-    Sobre_Nosotros-->Información_de_la_misión_y_visión_de_ARTMEX;
-    Sobre_Nosotros-->Detalles_sobre_los_autores_del_proyecto;
-    Sobre_Nosotros-->Enlaces_a_redes_sociales;
-
-    Configuración-->Configuración_de_la_cuenta;
-    Configuración-->Idioma_(multilingüe);
-    Configuración-->Notificaciones;
-    Configuración-->Términos_y_condiciones;
-    Configuración-->Políticas_de_privacidad;
-    
+8. **Configuración**
+   - Configuración de la cuenta
+   - Idioma (multilingüe)
+   - Notificaciones
+   - Términos y condiciones
+   - Políticas de privacidad
 ## Estructura de Archivos
 
 >ARTMEX<br>
