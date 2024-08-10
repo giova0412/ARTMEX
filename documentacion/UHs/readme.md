@@ -2,102 +2,103 @@
 
 
  En esta seccion se trabajara con el historial de usuario
+ # UHs (User Histories) - ARTMEX
 
- # Historias de Usuario - ARTMEX
+## UH01: Registro de Usuarios
+**Descripción:**  
+Permitir a los usuarios registrarse en la aplicación proporcionando un correo electrónico, contraseña y otros datos básicos.
 
-## 1. Registro de Usuarios
-**Como** un nuevo usuario  
-**Quiero** poder registrarme en la aplicación  
-**Para** que pueda crear una cuenta y acceder a funcionalidades exclusivas.
-
-### Criterios de Aceptación:
-- El formulario de registro debe solicitar información básica como nombre, correo electrónico y contraseña.
-- El sistema debe validar que el correo electrónico no esté en uso.
-- Los usuarios deben recibir un correo de confirmación para activar su cuenta.
-
----
-
-## 2. Inicio de Sesión
-**Como** usuario registrado  
-**Quiero** poder iniciar sesión en la aplicación  
-**Para** acceder a mi cuenta y gestionar mis datos.
-
-### Criterios de Aceptación:
-- El sistema debe permitir iniciar sesión utilizando el correo electrónico y la contraseña.
-- Los usuarios deben tener la opción de recuperar su contraseña en caso de olvidarla.
-- La sesión debe mantenerse activa hasta que el usuario cierre la sesión o expire después de un tiempo de inactividad.
+**Tareas:**
+- Crear el formulario de registro con campos de nombre, correo electrónico, contraseña y confirmación de contraseña.
+- Implementar validación en el lado del cliente para asegurarse de que los campos estén completos y que las contraseñas coincidan.
+- Validar en el servidor que el correo electrónico no esté en uso.
+- Enviar un correo electrónico de confirmación con un enlace de activación de cuenta.
+- Almacenar los datos del usuario en la base de datos MySQL utilizando PHP.
 
 ---
 
-## 3. Explorar Artesanos en el Mapa
-**Como** usuario  
-**Quiero** ver un mapa interactivo con la ubicación de talleres de artesanos  
-**Para** encontrar artesanos cercanos o explorar diferentes regiones de México.
+## UH02: Inicio de Sesión
+**Descripción:**  
+Implementar un sistema de autenticación que permita a los usuarios iniciar sesión en la aplicación utilizando su correo electrónico y contraseña.
 
-### Criterios de Aceptación:
-- El mapa debe mostrar marcadores que representen talleres de artesanos.
-- Al hacer clic en un marcador, se debe mostrar información básica del taller y un enlace para ver más detalles.
-- Los usuarios deben poder filtrar los talleres por tipo de artesanía o región.
-
----
-
-## 4. Buscar Artesanos y Productos
-**Como** usuario  
-**Quiero** buscar artesanos y productos específicos  
-**Para** encontrar exactamente lo que estoy buscando de manera eficiente.
-
-### Criterios de Aceptación:
-- El sistema debe permitir búsquedas por nombre del artesano, tipo de artesanía, o ubicación.
-- Los resultados deben mostrarse en una lista con información relevante como el nombre del artesano, la descripción del producto y un enlace a más detalles.
-- La búsqueda debe ser rápida y precisa, mostrando los resultados en tiempo real.
+**Tareas:**
+- Crear el formulario de inicio de sesión con campos para correo electrónico y contraseña.
+- Verificar las credenciales del usuario contra la base de datos MySQL.
+- Implementar gestión de sesiones para mantener la sesión del usuario activa.
+- Añadir funcionalidad para recuperar contraseñas, enviando un enlace de restablecimiento por correo electrónico.
+- Proteger las rutas y páginas sensibles mediante verificación de sesión.
 
 ---
 
-## 5. Gestión de Perfil de Artesano
-**Como** artesano  
-**Quiero** poder crear y gestionar mi perfil  
-**Para** mostrar mis productos y permitir que los usuarios me encuentren fácilmente.
+## UH03: Exploración de Artesanos en el Mapa
+**Descripción:**  
+Permitir a los usuarios visualizar un mapa interactivo que muestra la ubicación de talleres de artesanos en México.
 
-### Criterios de Aceptación:
-- Los artesanos deben poder añadir información sobre su taller, como nombre, ubicación, tipo de artesanías y horario de atención.
-- Deben poder subir imágenes y descripciones de sus productos.
-- Los artesanos deben tener la opción de añadir enlaces a sus sitios web o plataformas de venta.
-
----
-
-## 6. Valoraciones y Comentarios
-**Como** usuario  
-**Quiero** dejar una valoración y comentario en el perfil de un artesano  
-**Para** compartir mi experiencia con otros usuarios.
-
-### Criterios de Aceptación:
-- Los usuarios deben poder dejar una calificación (de 1 a 5 estrellas) y un comentario.
-- Los comentarios deben mostrarse públicamente en el perfil del artesano.
-- El sistema debe moderar los comentarios para evitar contenido inapropiado.
+**Tareas:**
+- Integrar una API de mapas (como Google Maps) utilizando JavaScript.
+- Mostrar marcadores en el mapa correspondientes a la ubicación de los talleres de artesanos.
+- Implementar filtros para que los usuarios puedan buscar talleres por tipo de artesanía o región.
+- Mostrar información básica del taller al hacer clic en un marcador, con un enlace a más detalles.
 
 ---
 
-## 7. Notificaciones de Nuevos Productos
-**Como** usuario  
-**Quiero** recibir notificaciones cuando un artesano que sigo añade nuevos productos  
-**Para** estar al tanto de las últimas novedades y productos disponibles.
+## UH04: Búsqueda de Artesanos y Productos
+**Descripción:**  
+Facilitar la búsqueda de artesanos y productos específicos a través de un sistema de búsqueda eficiente.
 
-### Criterios de Aceptación:
-- Los usuarios deben poder seguir a artesanos para recibir actualizaciones.
-- Las notificaciones deben enviarse a través de la aplicación y por correo electrónico.
-- Los usuarios deben poder configurar sus preferencias de notificación.
+**Tareas:**
+- Crear un formulario de búsqueda con opciones para buscar por nombre del artesano, tipo de artesanía, o ubicación.
+- Implementar la funcionalidad de búsqueda en el servidor, optimizando las consultas SQL en MySQL.
+- Mostrar los resultados de búsqueda en una lista con información relevante y enlaces a más detalles.
+- Optimizar la interfaz para que los resultados se muestren rápidamente y sean fácilmente navegables.
 
 ---
 
-## 8. Cambiar Idioma de la Aplicación
-**Como** usuario que habla un idioma diferente  
-**Quiero** poder cambiar el idioma de la aplicación entre español e inglés  
-**Para** navegar la aplicación en mi idioma preferido.
+## UH05: Gestión de Perfiles de Artesanos
+**Descripción:**  
+Permitir a los artesanos crear y gestionar sus perfiles, así como agregar, editar y eliminar productos.
 
-### Criterios de Aceptación:
-- El usuario debe poder cambiar el idioma desde cualquier parte de la aplicación.
-- Todo el contenido de la aplicación debe reflejar el idioma seleccionado inmediatamente.
-- El sistema debe recordar la preferencia de idioma del usuario para futuras sesiones.
+**Tareas:**
+- Crear un formulario de gestión de perfil donde los artesanos puedan añadir información como nombre del taller, ubicación, descripción, y horarios.
+- Implementar funcionalidad para subir y gestionar imágenes de productos.
+- Crear un panel de administración donde los artesanos puedan añadir, editar, y eliminar productos.
+- Almacenar toda la información en la base de datos MySQL y asegurar la integridad de los datos.
+
+---
+
+## UH06: Sistema de Valoraciones y Comentarios
+**Descripción:**  
+Permitir a los usuarios dejar valoraciones y comentarios en los perfiles de los artesanos.
+
+**Tareas:**
+- Crear una sección en el perfil del artesano donde los usuarios puedan dejar una calificación (1-5 estrellas) y un comentario.
+- Implementar funcionalidad en el servidor para almacenar y moderar comentarios.
+- Mostrar las valoraciones y comentarios en el perfil del artesano en tiempo real.
+- Añadir controles para que los administradores puedan eliminar comentarios inapropiados.
+
+---
+
+## UH07: Notificaciones de Nuevos Productos
+**Descripción:**  
+Permitir que los usuarios reciban notificaciones cuando los artesanos que siguen añadan nuevos productos.
+
+**Tareas:**
+- Implementar una funcionalidad de "seguir artesano" que permita a los usuarios suscribirse a actualizaciones.
+- Crear un sistema de notificaciones que se dispare cuando un artesano añade un nuevo producto.
+- Enviar notificaciones a través de la aplicación y por correo electrónico, según las preferencias del usuario.
+- Permitir que los usuarios configuren y gestionen sus preferencias de notificación.
+
+---
+
+## UH08: Cambio de Idioma en la Aplicación
+**Descripción:**  
+Ofrecer la opción de cambiar el idioma de la aplicación entre español e inglés.
+
+**Tareas:**
+- Implementar una funcionalidad que permita cambiar el idioma desde cualquier parte de la aplicación.
+- Configurar la aplicación para soportar textos dinámicos en múltiples idiomas utilizando PHP.
+- Asegurar que todo el contenido se actualice instantáneamente cuando el usuario cambie el idioma.
+- Almacenar la preferencia de idioma del usuario para aplicarla automáticamente en futuras sesiones.
 ## Estructura de Archivos
 
 >ARTMEX<br>
