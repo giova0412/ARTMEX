@@ -1,0 +1,83 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #e4eee4;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #004225;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff00;
+}
+
+/* Tarjetas */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 0;
+    color: #e4eee4;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #004225;
+    border-color: #004225;
+}
+
+.btn-primary:hover {
+    background-color: #003317;
+    border-color: #003317;
+}
+
+.btn-success {
+    background-color: #008000;
+    border-color: #008000;
+}
+
+.btn-success:hover {
+    background-color: #006400;
+    border-color: #006400;
+}
+
+/* Footer */
+footer {
+    background-color: #004225;
+    color: #ffffff;
+    padding: 10px; /* Reducir el padding */
+    font-size: 12px; /* Reducir el tamaño del texto */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Carrusel */
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo para las secciones */
+.container {
+    padding: 20px;
+}
