@@ -1,7 +1,7 @@
 # html
 
 
- En esta seccion se trabajara con el html
+ En esta seccion se trabajara con el html de la pagina  ya esta toda las paginas en html se espera su revision
  
 ## Estructura de Archivos
 

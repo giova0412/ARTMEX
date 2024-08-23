@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro Estilo Chat</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .chat-container {
+            margin-top: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .chat-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            height: 400px;
+            overflow-y: scroll;
+            background-color: #f9f9f9;
+        }
+        .chat-message {
+            margin-bottom: 15px;
+        }
+        .chat-input {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="inicio.html">ARTMEX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artesanias.html">Artesanías</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="busqueda.html">Búsqueda</a>
+                </li>
+                <li class="nav-item" id="forumLink" style="display: none;">
+                    <a class="nav-link" href="foro.html">Foro</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="loginLink">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container chat-container">
+        <h1 class="text-center">Foro Estilo Chat</h1>
+
+        <div class="chat-box" id="chatBox">
+            <!-- Mensajes del chat -->
+        </div>
+
+        <form id="chatForm" class="chat-input">
+            <div class="input-group">
+                <input type="text" id="chatInput" class="form-control" placeholder="Escribe un mensaje..." required>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2024 ARTMEX - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        const chatBox = document.getElementById('chatBox');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+
+        // Cargar mensajes desde localStorage
+        const savedMessages = JSON.parse(localStorage.getItem('chatMessages')) || [];
+
+        function renderMessages() {
+            chatBox.innerHTML = '';
+            savedMessages.forEach((message, index) => {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('chat-message');
+                messageElement.innerHTML = `<strong>Usuario:</strong> ${message}`;
+                chatBox.appendChild(messageElement);
+            });
+            chatBox.scrollTop = chatBox.scrollHeight; // Desplazar al final
+        }
+
+        chatForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const newMessage = chatInput.value;
+
+            savedMessages.push(newMessage);
+            localStorage.setItem('chatMessages', JSON.stringify(savedMessages));
+            renderMessages();
+
+            chatInput.value = ''; // Limpiar input
+        });
+
+        // Renderizar mensajes al cargar la página
+        renderMessages();
+    </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="java/navbar.js"></script>
+        
+</body>
+</html>
