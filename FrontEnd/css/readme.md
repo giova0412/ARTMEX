@@ -1,7 +1,8 @@
 # css
 
 
- En esta seccion se trabajara con el estilo de la pagina con css
+ En esta seccion se trabajara con el estilo de la pagina con css 
+ el estilo agregado sera con el que trabajara la aplicacion
  
 ## Estructura de Archivos
 

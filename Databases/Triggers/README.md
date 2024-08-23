@@ -20,5 +20,5 @@ En este apartado se encuentra todo lo realacioando con los Triggers del proyecto
 
 |Integrante|Contacto|Rol|Observaciones|
 |------------|--------|---|---|
-|Giovany Raúl Pasos Cruz|[giova0412](https://github.com/Egiova0412)|Desarrollador de FrontEnd|😔No ha revisado.|
+|Giovany Raúl Pasos Cruz|[giova0412](https://github.com/Egiova0412)|Desarrollador de FrontEnd|😔 revisado le falta los triggers|
 |Edwin Hernández Campos|[Edwincamp](https://github.com/Edwincamp)|Desarrollador de bases de datos|✅Revisado y aprobado.|

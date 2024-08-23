@@ -1,7 +1,7 @@
 # wireframes
 
 
- En esta seccion se trabajara con los wireframes
+ En esta seccion se trabajara con los wireframes para la aplicacion
  
 ## Estructura de Archivos
 
